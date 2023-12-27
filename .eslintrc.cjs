@@ -4,14 +4,13 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    'plugin:prettier/recommended'
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:prettier/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
-  plugins: ['react', 'react-refresh', 'prettier'],
-
+  plugins: ['react', 'react-refresh'],
   rules: {
     'react/react-in-jsx-scope': 'off',
     'react/require-default-props': 'off',
@@ -19,7 +18,7 @@ module.exports = {
       'error',
       {
         endOfLine: 'auto',
-      }
-    ]
+      },
+    ],
   },
-}
+};
