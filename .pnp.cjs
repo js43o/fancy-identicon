@@ -26,12 +26,14 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@types/crypto-js", "npm:4.2.1"],\
           ["@types/react", "npm:18.2.45"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["@typescript-eslint/eslint-plugin", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:6.16.0"],\
           ["@typescript-eslint/parser", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:6.16.0"],\
           ["@vitejs/plugin-react", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:4.2.1"],\
           ["autoprefixer", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:10.4.16"],\
+          ["crypto-js", "npm:4.2.0"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-prettier", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:9.1.0"],\
           ["eslint-plugin-prettier", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:5.1.2"],\
@@ -1001,6 +1003,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["@types/crypto-js", [\
+      ["npm:4.2.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-crypto-js-npm-4.2.1-e032b646fb-10c0.zip/node_modules/@types/crypto-js/",\
+        "packageDependencies": [\
+          ["@types/crypto-js", "npm:4.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["@types/json-schema", [\
       ["npm:7.0.15", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/@types-json-schema-npm-7.0.15-fd16381786-10c0.zip/node_modules/@types/json-schema/",\
@@ -1847,6 +1858,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["crypto-js", [\
+      ["npm:4.2.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/crypto-js-npm-4.2.0-d6f7744e63-10c0.zip/node_modules/crypto-js/",\
+        "packageDependencies": [\
+          ["crypto-js", "npm:4.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["cssesc", [\
       ["npm:3.0.0", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/cssesc-npm-3.0.0-15ec56f86f-10c0.zip/node_modules/cssesc/",\
@@ -2458,12 +2478,14 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["fancy-identicon", "workspace:."],\
+          ["@types/crypto-js", "npm:4.2.1"],\
           ["@types/react", "npm:18.2.45"],\
           ["@types/react-dom", "npm:18.2.18"],\
           ["@typescript-eslint/eslint-plugin", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:6.16.0"],\
           ["@typescript-eslint/parser", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:6.16.0"],\
           ["@vitejs/plugin-react", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:4.2.1"],\
           ["autoprefixer", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:10.4.16"],\
+          ["crypto-js", "npm:4.2.0"],\
           ["eslint", "npm:8.56.0"],\
           ["eslint-config-prettier", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:9.1.0"],\
           ["eslint-plugin-prettier", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:5.1.2"],\
