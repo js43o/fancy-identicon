@@ -6,6 +6,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       pretendard: 'Pretendard',
+      neoDunggeunmo: 'NeoDunggeunmo',
     },
   },
   plugins: [],
