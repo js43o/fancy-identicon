@@ -1,3 +1,4 @@
-export * from './Input';
+export * from './Username';
 export * from './Header';
 export * from './Identicon';
+export * from './Switch';
