@@ -52,9 +52,15 @@ function App() {
   }, [color]);
 
   return (
-    <div className="flex h-full w-full flex-col bg-gray-800 font-pretendard text-gray-50">
-      <Header />
-      <main className="relative  flex grow flex-col items-center justify-center gap-4">
+    <div
+      className={`flex h-full w-full flex-col ${
+        theme === 'dark'
+          ? 'bg-gray-800 text-gray-50'
+          : 'bg-gray-50 text-gray-800'
+      } font-pretendard`}
+    >
+      <Header theme={theme} />
+      <main className="relative flex grow flex-col items-center justify-center gap-4">
         <Identicon blocks={blocks} glow={glow} />
         <Username username={username} onChangeUsername={onChangeUsername} />
         <Sidebar

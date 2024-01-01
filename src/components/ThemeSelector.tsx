@@ -9,7 +9,7 @@ type ThemeSelectorProps = {
 
 export function ThemeSelector({ theme, onSelectTheme }: ThemeSelectorProps) {
   return (
-    <ul className="flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-gray-400">
+    <ul className="flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-gray-400 bg-gray-600">
       <li
         onClick={() => onSelectTheme('light')}
         className={`p-1.5 transition-colors ${
