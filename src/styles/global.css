@@ -29,7 +29,7 @@
 }
 
 .cube-top {
-  transform: rotateX(90deg) translateZ(10rem);
+  transform: rotateX(90deg) translateZ(calc(10rem - 2px));
 }
 
 .cube-front {
@@ -37,5 +37,20 @@
 }
 
 .cube-side {
-  transform: rotateY(90deg) translateZ(10rem)
+  transform: rotateY(90deg) translateZ(10rem);
+}
+
+.rotated .cube-top {
+  border-radius: 2px 0px 2px 0px;
+  overflow: hidden;
+}
+
+.rotated .cube-front {
+  border-top-left-radius: 4px;
+  overflow: hidden;
+}
+
+.rotated .cube-side {
+  border-radius: 4px 0 0 0;
+  overflow: hidden;
 }

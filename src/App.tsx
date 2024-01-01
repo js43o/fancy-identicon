@@ -53,11 +53,11 @@ function App() {
 
   return (
     <div
-      className={`flex h-full w-full flex-col ${
-        theme === 'dark'
-          ? 'bg-gray-800 text-gray-50'
-          : 'bg-github-default text-gray-800'
-      } font-pretendard`}
+      className={`flex h-full w-full flex-col font-pretendard transition-colors ${
+        theme === 'light'
+          ? 'bg-github-default text-gray-800'
+          : 'bg-gray-800 text-gray-50'
+      }`}
     >
       <Header theme={theme} />
       <main className="relative flex grow flex-col items-center justify-center gap-4">
