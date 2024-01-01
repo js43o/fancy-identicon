@@ -23,7 +23,7 @@ export function Identicon({ blocks, glow, theme }: IdenticonProps) {
           (block, index) => (
             <div
               key={index}
-              className={`block h-full w-full border transition-colors ${
+              className={`block h-full w-full border ${
                 block
                   ? `border-[var(--block-color)] bg-[var(--block-color)]`
                   : 'border-transparent'
