@@ -26,8 +26,8 @@ function App() {
     const hash = md5(username).toString();
     setColor([
       parseInt(hash.slice(0, 16), 16) % 360,
-      (parseInt(hash.slice(16, 24), 16) % 40) + (vivid ? 60 : 30),
-      (parseInt(hash.slice(24, 32), 16) % 20) + (vivid ? 50 : 70),
+      vivid ? 100 : (parseInt(hash.slice(16, 24), 16) % 40) + 30,
+      vivid ? 50 : (parseInt(hash.slice(24, 32), 16) % 20) + 70,
     ]);
     setBlocks(
       Array.from(hash)
@@ -49,8 +49,8 @@ function App() {
   return (
     <div className="flex h-full w-full flex-col bg-slate-800 font-pretendard text-gray-50">
       <Header />
-      <main className="relative  flex grow flex-col items-center justify-center gap-2">
-        <Identicon blocks={blocks} />
+      <main className="relative  flex grow flex-col items-center justify-center gap-4">
+        <Identicon blocks={blocks} glow={glow} />
         <Username username={username} onChangeUsername={onChangeUsername} />
         <Sidebar
           vivid={vivid}
