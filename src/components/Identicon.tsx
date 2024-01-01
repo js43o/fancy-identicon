@@ -12,7 +12,7 @@ export function Identicon({ blocks, glow }: IdenticonProps) {
             key={index}
             className={`h-full w-full transition-all ${
               block ? `bg-[var(--block-color)]` : ''
-            } ${glow ? 'drop-shadow-[0_0_1rem_var(--block-color)]' : ''}`}
+            } ${glow ? 'drop-shadow-[0_0_0.75rem_var(--block-color)]' : ''}`}
           />
         )
       )}

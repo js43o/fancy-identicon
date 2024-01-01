@@ -32,7 +32,7 @@ function App() {
     setColor([
       parseInt(hash.slice(0, 16), 16) % 360,
       vivid ? 100 : (parseInt(hash.slice(16, 24), 16) % 40) + 30,
-      vivid ? 50 : (parseInt(hash.slice(24, 32), 16) % 20) + 70,
+      vivid ? 50 : (parseInt(hash.slice(24, 32), 16) % 20) + 60,
     ]);
     setBlocks(
       Array.from(hash)
@@ -56,7 +56,7 @@ function App() {
       className={`flex h-full w-full flex-col ${
         theme === 'dark'
           ? 'bg-gray-800 text-gray-50'
-          : 'bg-gray-50 text-gray-800'
+          : 'bg-github-default text-gray-800'
       } font-pretendard`}
     >
       <Header theme={theme} />

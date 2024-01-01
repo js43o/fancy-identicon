@@ -3,7 +3,11 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'github-default': '#F0F0F0',
+      },
+    },
     fontFamily: {
       pretendard: 'Pretendard',
       neoDunggeunmo: 'NeoDunggeunmo',
