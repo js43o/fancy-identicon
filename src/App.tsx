@@ -9,9 +9,14 @@ function App() {
   const [color, setColor] = useState([0, 0, 0]);
   const [vivid, setVivid] = useState(false);
   const [glow, setGlow] = useState(false);
+  const [theme, setTheme] = useState<'light' | 'dark' | 'cube'>('dark');
 
   const onChangeUsername: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setUsername(e.target.value);
+  };
+
+  const onSelectTheme = (newTheme: 'light' | 'dark' | 'cube') => {
+    setTheme(newTheme);
   };
 
   const toggleVivid = () => setVivid(!vivid);
@@ -47,7 +52,7 @@ function App() {
   }, [color]);
 
   return (
-    <div className="flex h-full w-full flex-col bg-slate-800 font-pretendard text-gray-50">
+    <div className="flex h-full w-full flex-col bg-gray-800 font-pretendard text-gray-50">
       <Header />
       <main className="relative  flex grow flex-col items-center justify-center gap-4">
         <Identicon blocks={blocks} glow={glow} />
@@ -55,11 +60,13 @@ function App() {
         <Sidebar
           vivid={vivid}
           glow={glow}
+          theme={theme}
           toggleVivid={toggleVivid}
           toggleGlow={toggleGlow}
+          onSelectTheme={onSelectTheme}
         />
       </main>
-      <footer className="flex items-center justify-center p-4 text-gray-500">
+      <footer className="flex items-center justify-center p-4 text-gray-400">
         made by js43o
       </footer>
     </div>
