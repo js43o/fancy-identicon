@@ -7,21 +7,21 @@ type IdenticonProps = {
 export function Identicon({ blocks, glow, theme }: IdenticonProps) {
   return (
     <div
-      className={`cube-wrapper relative flex h-80 w-80 flex-col transition-transform ${
+      className={`cube-wrapper relative flex h-80 w-80 flex-col transition-transform duration-500 ${
         theme === 'cube' ? 'rotated' : ''
       }`}
     >
       <div
-        className={`cube-top absolute h-full w-full bg-blue-200 transition-all`}
+        className={`cube-top absolute h-full w-full bg-blue-200 transition-colors`}
       />
       <div
-        className={`cube-front absolute z-10 grid h-full w-full grid-flow-col grid-cols-5 grid-rows-5 transition-all`}
+        className={`cube-front absolute z-10 grid h-full w-full grid-flow-col grid-cols-5 grid-rows-5 transition-colors`}
       >
         {[...blocks, ...blocks.slice(5, 10), ...blocks.slice(0, 5)].map(
           (block, index) => (
             <div
               key={index}
-              className={`h-full w-full transition-all ${
+              className={`h-full w-full transition-colors ${
                 block ? `bg-[var(--block-color)]` : ''
               } ${glow ? 'drop-shadow-[0_0_0.75rem_var(--block-color)]' : ''}`}
             />
@@ -29,7 +29,7 @@ export function Identicon({ blocks, glow, theme }: IdenticonProps) {
         )}
       </div>
       <div
-        className={`cube-side absolute h-full w-full bg-red-200 transition-all`}
+        className={`cube-side absolute h-full w-full bg-red-200 transition-colors`}
       />
     </div>
   );
