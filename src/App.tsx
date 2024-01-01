@@ -1,15 +1,21 @@
 import { useEffect, useState } from 'react';
 import { Header, Identicon, Username } from '~/components';
 import md5 from 'crypto-js/md5';
+import { Sidebar } from './components/Sidebar';
 
 function App() {
   const [username, setUsername] = useState('');
   const [blocks, setBlocks] = useState([...Array(15).map(() => 0)]);
   const [color, setColor] = useState([0, 0, 0]);
+  const [vivid, setVivid] = useState(false);
+  const [glow, setGlow] = useState(false);
 
   const onChangeUsername: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setUsername(e.target.value);
   };
+
+  const toggleVivid = () => setVivid(!vivid);
+  const toggleGlow = () => setGlow(!glow);
 
   useEffect(() => {
     if (!username) {
@@ -43,9 +49,15 @@ function App() {
   return (
     <div className="flex h-full w-full flex-col bg-slate-800 font-pretendard text-gray-50">
       <Header />
-      <main className="flex grow flex-col items-center justify-center gap-2">
+      <main className="relative  flex grow flex-col items-center justify-center gap-2">
         <Identicon blocks={blocks} />
         <Username username={username} onChangeUsername={onChangeUsername} />
+        <Sidebar
+          vivid={vivid}
+          glow={glow}
+          toggleVivid={toggleVivid}
+          toggleGlow={toggleGlow}
+        />
       </main>
       <footer className="flex items-center justify-center p-4 text-gray-500">
         made by js43o

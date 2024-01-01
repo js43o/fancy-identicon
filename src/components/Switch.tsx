@@ -9,7 +9,7 @@ export function Switch({ enabled, toggleEnabled }: SwitchProps) {
       type="button"
       onClick={toggleEnabled}
       className={`switch-outer relative flex w-10 rounded-full border border-gray-400 p-1 transition-colors ${
-        enabled ? 'border-blue-300 bg-blue-600' : ''
+        enabled ? 'border-blue-400 bg-blue-600' : ''
       }`}
     >
       <div
