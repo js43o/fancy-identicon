@@ -19,3 +19,23 @@
 :root {
   --block-color: #fff;
 }
+
+.cube-wrapper {
+  transform-style: preserve-3d;
+}
+
+.cube-wrapper.rotated {
+  transform: rotateX(30deg) rotateY(45deg) scale3d(0.6, 0.6, 0.6);
+}
+
+.cube-top {
+  transform: rotateX(90deg) translateZ(10rem);
+}
+
+.cube-front {
+  transform: translateZ(-10rem);
+}
+
+.cube-side {
+  transform: rotateY(90deg) translateZ(10rem)
+}

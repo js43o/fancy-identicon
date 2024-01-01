@@ -5,7 +5,7 @@ type UsernameProps = {
 
 export function Username({ username, onChangeUsername }: UsernameProps) {
   return (
-    <label className="flex flex-col items-center gap-1 font-pretendard">
+    <label className="z-20 flex flex-col items-center gap-1 font-pretendard">
       Enter your name
       <input
         value={username}

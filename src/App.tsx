@@ -61,7 +61,7 @@ function App() {
     >
       <Header theme={theme} />
       <main className="relative flex grow flex-col items-center justify-center gap-4">
-        <Identicon blocks={blocks} glow={glow} />
+        <Identicon blocks={blocks} glow={glow} theme={theme} />
         <Username username={username} onChangeUsername={onChangeUsername} />
         <Sidebar
           vivid={vivid}
