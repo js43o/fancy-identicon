@@ -9,8 +9,8 @@ export function Identicon({ blocks }: IdenticonProps) {
         (block, index) => (
           <div
             key={index}
-            className={`h-full w-full${
-              block ? ` bg-[var(--block-color)]` : ''
+            className={`h-full w-full transition-colors ${
+              block ? `bg-[var(--block-color)]` : ''
             }`}
           />
         )
