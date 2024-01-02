@@ -29,12 +29,14 @@ function App() {
       return;
     }
 
-    domToImage.toPng(identiconRef.current, { quality: 1.0 }).then((dataUrl) => {
-      const link = document.createElement('a');
-      link.download = username;
-      link.href = dataUrl;
-      link.click();
-    });
+    domToImage
+      .toPng(identiconRef.current, { bgcolor: '#1f2937' })
+      .then((dataUrl) => {
+        const link = document.createElement('a');
+        link.download = username;
+        link.href = dataUrl;
+        link.click();
+      });
   };
 
   useEffect(() => {
