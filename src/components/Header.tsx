@@ -17,7 +17,10 @@ export function Header({ theme }: HeaderProps) {
         />
         <span className="font-neoDunggeunmo">FancyIdenticon</span>
       </div>
-      <a href="https://github.com/js43o/fancy-identicon" aria-label="github">
+      <a
+        href="https://github.com/js43o/fancy-identicon"
+        aria-label="github project repository"
+      >
         <GithubIcon
           width={24}
           height={24}

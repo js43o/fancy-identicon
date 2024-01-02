@@ -20,11 +20,11 @@
   --block-color: #fff;
 }
 
-button:hover {
+button:hover, .clickable:hover {
   filter: brightness(1.1);
 }
 
-button:active {
+button:active, .clickable:active {
   filter: brightness(0.9);
 }
 

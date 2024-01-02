@@ -10,11 +10,11 @@ type ThemeSelectorProps = {
 
 export function ThemeSelector({ theme, onSelectTheme }: ThemeSelectorProps) {
   return (
-    <ul className="flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-gray-400 bg-gray-600">
+    <ul className="flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-gray-400">
       <li
         onClick={() => onSelectTheme('light')}
-        className={`p-1.5 transition-colors ${
-          theme === 'light' ? 'bg-gray-50' : ''
+        className={`clickable p-1.5 transition-colors ${
+          theme === 'light' ? 'bg-gray-50' : 'bg-gray-600'
         }`}
       >
         <SunIcon
@@ -27,8 +27,8 @@ export function ThemeSelector({ theme, onSelectTheme }: ThemeSelectorProps) {
       </li>
       <li
         onClick={() => onSelectTheme('dark')}
-        className={`p-1.5 transition-colors ${
-          theme === 'dark' ? 'bg-gray-50' : ''
+        className={`clickable p-1.5 transition-colors ${
+          theme === 'dark' ? 'bg-gray-50' : 'bg-gray-600'
         }`}
       >
         <MoonIcon
@@ -41,8 +41,8 @@ export function ThemeSelector({ theme, onSelectTheme }: ThemeSelectorProps) {
       </li>
       <li
         onClick={() => onSelectTheme('cube')}
-        className={`p-1.5 transition-colors ${
-          theme === 'cube' ? 'bg-gray-50' : ''
+        className={`clickable p-1.5 transition-colors ${
+          theme === 'cube' ? 'bg-gray-50' : 'bg-gray-600'
         }`}
       >
         <CubeIcon

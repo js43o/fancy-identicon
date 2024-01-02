@@ -73,7 +73,9 @@ function App() {
         />
       </main>
       <footer className="flex items-center justify-center p-4 text-gray-400">
-        made by js43o
+        <a href="https://github.com/js43o" aria-label="github profile">
+          made by js43o
+        </a>
       </footer>
     </div>
   );
