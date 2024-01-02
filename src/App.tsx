@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import html2canvas from 'html2canvas';
+import domToImage from 'dom-to-image';
 import md5 from 'crypto-js/md5';
 import { Header, Identicon, Username, Sidebar } from '~/components';
 import { Theme } from '~/utils';
@@ -25,14 +25,15 @@ function App() {
   const toggleGlow = () => setGlow(!glow);
 
   const onCapture = () => {
-    console.log(identiconRef);
     if (!identiconRef?.current) {
-      console.log('return');
       return;
     }
 
-    html2canvas(identiconRef.current).then((canvas) => {
-      console.log(canvas);
+    domToImage.toPng(identiconRef.current, { quality: 1.0 }).then((dataUrl) => {
+      const link = document.createElement('a');
+      link.download = username;
+      link.href = dataUrl;
+      link.click();
     });
   };
 
