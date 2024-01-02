@@ -3,7 +3,7 @@
 }
 
 .cube-wrapper.rotated {
-  transform: rotateX(30deg) rotateY(45deg) scale3d(0.55, 0.55, 0.55);
+  transform: rotateX(30deg) rotateY(45deg) scale3d(0.5, 0.5, 0.5);
 }
 
 .cube-top {
