@@ -40,6 +40,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:7.33.2"],\
           ["eslint-plugin-react-hooks", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:0.4.5"],\
+          ["html2canvas", "npm:1.4.1"],\
           ["postcss", "npm:8.4.32"],\
           ["prettier", "npm:3.1.1"],\
           ["prettier-plugin-tailwindcss", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:0.5.9"],\
@@ -1977,6 +1978,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["base64-arraybuffer", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/base64-arraybuffer-npm-1.0.2-18f4899892-10c0.zip/node_modules/base64-arraybuffer/",\
+        "packageDependencies": [\
+          ["base64-arraybuffer", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["binary-extensions", [\
       ["npm:2.2.0", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/binary-extensions-npm-2.2.0-180c33fec7-10c0.zip/node_modules/binary-extensions/",\
@@ -2257,6 +2267,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/crypto-js-npm-4.2.0-d6f7744e63-10c0.zip/node_modules/crypto-js/",\
         "packageDependencies": [\
           ["crypto-js", "npm:4.2.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["css-line-break", [\
+      ["npm:2.1.0", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/css-line-break-npm-2.1.0-a1fd810d69-10c0.zip/node_modules/css-line-break/",\
+        "packageDependencies": [\
+          ["css-line-break", "npm:2.1.0"],\
+          ["utrie", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2925,6 +2945,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:7.33.2"],\
           ["eslint-plugin-react-hooks", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:4.6.0"],\
           ["eslint-plugin-react-refresh", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:0.4.5"],\
+          ["html2canvas", "npm:1.4.1"],\
           ["postcss", "npm:8.4.32"],\
           ["prettier", "npm:3.1.1"],\
           ["prettier-plugin-tailwindcss", "virtual:59021392d9ad4ba380d141c3152a0cf17b139de94289c680ff95ad242b5c15fbf21ca224730bc919994ea07fb55bf6d6f78e618cf586eb996c9be68b5b4f5e76#npm:0.5.9"],\
@@ -3365,6 +3386,17 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["hasown", "npm:2.0.0"],\
           ["function-bind", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["html2canvas", [\
+      ["npm:1.4.1", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/html2canvas-npm-1.4.1-fa13983145-10c0.zip/node_modules/html2canvas/",\
+        "packageDependencies": [\
+          ["html2canvas", "npm:1.4.1"],\
+          ["css-line-break", "npm:2.1.0"],\
+          ["text-segmentation", "npm:1.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5451,6 +5483,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["text-segmentation", [\
+      ["npm:1.0.3", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/text-segmentation-npm-1.0.3-634201c349-10c0.zip/node_modules/text-segmentation/",\
+        "packageDependencies": [\
+          ["text-segmentation", "npm:1.0.3"],\
+          ["utrie", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["text-table", [\
       ["npm:0.2.0", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/text-table-npm-0.2.0-d92a778b59-10c0.zip/node_modules/text-table/",\
@@ -5703,6 +5745,16 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/util-deprecate-npm-1.0.2-e3fe1a219c-10c0.zip/node_modules/util-deprecate/",\
         "packageDependencies": [\
           ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["utrie", [\
+      ["npm:1.0.2", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/utrie-npm-1.0.2-909cbd985c-10c0.zip/node_modules/utrie/",\
+        "packageDependencies": [\
+          ["utrie", "npm:1.0.2"],\
+          ["base64-arraybuffer", "npm:1.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
