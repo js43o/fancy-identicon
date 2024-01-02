@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import html2canvas from 'html2canvas';
 import md5 from 'crypto-js/md5';
 import { Header, Identicon, Username, Sidebar } from '~/components';
 import { Theme } from '~/utils';
@@ -10,6 +11,7 @@ function App() {
   const [vivid, setVivid] = useState(false);
   const [glow, setGlow] = useState(false);
   const [theme, setTheme] = useState<Theme>('dark');
+  const identiconRef = useRef<HTMLDivElement | null>(null);
 
   const onChangeUsername: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setUsername(e.target.value);
@@ -21,6 +23,18 @@ function App() {
 
   const toggleVivid = () => setVivid(!vivid);
   const toggleGlow = () => setGlow(!glow);
+
+  const onCapture = () => {
+    console.log(identiconRef);
+    if (!identiconRef?.current) {
+      console.log('return');
+      return;
+    }
+
+    html2canvas(identiconRef.current).then((canvas) => {
+      console.log(canvas);
+    });
+  };
 
   useEffect(() => {
     if (!username) {
@@ -61,7 +75,9 @@ function App() {
     >
       <Header theme={theme} />
       <main className="relative flex grow flex-col items-center justify-center gap-4">
-        <Identicon blocks={blocks} glow={glow} theme={theme} />
+        <div ref={identiconRef}>
+          <Identicon blocks={blocks} glow={glow} theme={theme} />
+        </div>
         <Username username={username} onChangeUsername={onChangeUsername} />
         <Sidebar
           vivid={vivid}
@@ -70,6 +86,7 @@ function App() {
           toggleVivid={toggleVivid}
           toggleGlow={toggleGlow}
           onSelectTheme={onSelectTheme}
+          onCapture={onCapture}
         />
       </main>
       <footer className="flex items-center justify-center p-4 text-gray-400">

@@ -10,6 +10,7 @@ type SidebarProps = {
   toggleVivid: () => void;
   toggleGlow: () => void;
   onSelectTheme: (newTheme: Theme) => void;
+  onCapture: () => void;
 };
 
 export function Sidebar({
@@ -19,6 +20,7 @@ export function Sidebar({
   toggleVivid,
   toggleGlow,
   onSelectTheme,
+  onCapture,
 }: SidebarProps) {
   return (
     <aside className="absolute right-2 flex flex-col items-end gap-4">
@@ -45,7 +47,7 @@ export function Sidebar({
         </li>
       </ul>
       <ThemeSelector theme={theme} onSelectTheme={onSelectTheme} />
-      <Download />
+      <Download onCapture={onCapture} />
     </aside>
   );
 }
