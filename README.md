@@ -4,7 +4,7 @@
 
 ## Demo
 
-//
+https://js43o.github.io/fancy-identicon/
 
 ## Screenshots
 
