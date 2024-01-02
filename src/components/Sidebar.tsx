@@ -1,6 +1,7 @@
 import { Switch } from '~/components';
 import { Theme } from '~/utils';
 import { ThemeSelector } from './ThemeSelector';
+import { Download } from './Download';
 
 type SidebarProps = {
   vivid: boolean;
@@ -44,6 +45,7 @@ export function Sidebar({
         </li>
       </ul>
       <ThemeSelector theme={theme} onSelectTheme={onSelectTheme} />
+      <Download />
     </aside>
   );
 }

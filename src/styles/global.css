@@ -20,6 +20,14 @@
   --block-color: #fff;
 }
 
+button:hover {
+  filter: brightness(1.1);
+}
+
+button:active {
+  filter: brightness(0.9);
+}
+
 .cube-wrapper {
   transform-style: preserve-3d;
 }
