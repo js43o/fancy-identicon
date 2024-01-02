@@ -10,7 +10,7 @@ export function Username({ username, onChangeUsername }: UsernameProps) {
       <input
         value={username}
         onChange={onChangeUsername}
-        className="rounded border border-gray-400 p-1 focus:border-gray-200"
+        className="rounded border border-gray-400 p-1 focus:border-blue-400"
       />
     </label>
   );
