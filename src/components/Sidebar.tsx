@@ -25,13 +25,21 @@ export function Sidebar({
         <li>
           <label className="flex gap-2">
             vivid
-            <Switch enabled={vivid} toggleEnabled={toggleVivid} />
+            <Switch
+              enabled={vivid}
+              ariaLabel="vivid"
+              toggleEnabled={toggleVivid}
+            />
           </label>
         </li>
         <li>
           <label className="flex gap-2">
             glow
-            <Switch enabled={glow} toggleEnabled={toggleGlow} />
+            <Switch
+              enabled={glow}
+              ariaLabel="glow"
+              toggleEnabled={toggleGlow}
+            />
           </label>
         </li>
       </ul>
