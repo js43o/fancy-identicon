@@ -14,6 +14,14 @@
   transform: translateZ(-10rem);
 }
 
+.block-wrapper {
+  transform: translateZ(1px);
+}
+
+.block {
+  transform: scale(1.03);
+}
+
 .cube-side {
   transform: rotateY(90deg) translateZ(10rem);
 }
