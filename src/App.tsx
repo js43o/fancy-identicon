@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Header, Identicon, Username } from '~/components';
 import md5 from 'crypto-js/md5';
-import { Sidebar } from './components/Sidebar';
+import { Header, Identicon, Username, Sidebar } from '~/components';
+import { Theme } from '~/utils';
 
 function App() {
   const [username, setUsername] = useState('');
@@ -9,13 +9,13 @@ function App() {
   const [color, setColor] = useState([0, 0, 0]);
   const [vivid, setVivid] = useState(false);
   const [glow, setGlow] = useState(false);
-  const [theme, setTheme] = useState<'light' | 'dark' | 'cube'>('dark');
+  const [theme, setTheme] = useState<Theme>('dark');
 
   const onChangeUsername: React.ChangeEventHandler<HTMLInputElement> = (e) => {
     setUsername(e.target.value);
   };
 
-  const onSelectTheme = (newTheme: 'light' | 'dark' | 'cube') => {
+  const onSelectTheme = (newTheme: Theme) => {
     setTheme(newTheme);
   };
 

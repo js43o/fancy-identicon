@@ -1,13 +1,14 @@
 import { Switch } from '~/components';
+import { Theme } from '~/utils';
 import { ThemeSelector } from './ThemeSelector';
 
 type SidebarProps = {
   vivid: boolean;
   glow: boolean;
-  theme: 'light' | 'dark' | 'cube';
+  theme: Theme;
   toggleVivid: () => void;
   toggleGlow: () => void;
-  onSelectTheme: (newTheme: 'light' | 'dark' | 'cube') => void;
+  onSelectTheme: (newTheme: Theme) => void;
 };
 
 export function Sidebar({

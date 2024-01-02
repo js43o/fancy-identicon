@@ -1,7 +1,9 @@
+import { Theme } from '~/utils';
+
 type IdenticonProps = {
   blocks: number[];
   glow: boolean;
-  theme: 'light' | 'dark' | 'cube';
+  theme: Theme;
 };
 
 export function Identicon({ blocks, glow, theme }: IdenticonProps) {

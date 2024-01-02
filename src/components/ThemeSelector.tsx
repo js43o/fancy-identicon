@@ -1,10 +1,11 @@
 import SunIcon from '~/assets/sun.svg?react';
 import MoonIcon from '~/assets/moon.svg?react';
 import CubeIcon from '~/assets/cube.svg?react';
+import { Theme } from '~/utils';
 
 type ThemeSelectorProps = {
-  theme: 'light' | 'dark' | 'cube';
-  onSelectTheme: (newTheme: 'light' | 'dark' | 'cube') => void;
+  theme: Theme;
+  onSelectTheme: (newTheme: Theme) => void;
 };
 
 export function ThemeSelector({ theme, onSelectTheme }: ThemeSelectorProps) {

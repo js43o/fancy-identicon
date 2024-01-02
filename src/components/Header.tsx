@@ -1,8 +1,9 @@
 import GithubIcon from '~/assets/github.svg?react';
 import CubeIcon from '~/assets/cube.svg?react';
+import { Theme } from '~/utils';
 
 type HeaderProps = {
-  theme: 'light' | 'dark' | 'cube';
+  theme: Theme;
 };
 
 export function Header({ theme }: HeaderProps) {
