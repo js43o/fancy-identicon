@@ -1,30 +1,13 @@
-# React + TypeScript + Vite
+# ⚡Fancy Identicon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> For your **cooler** GitHub profile image<br />당신의 **더 멋진** GitHub 프로필 이미지를 위해
 
-Currently, two official plugins are available:
+## Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+//
 
-## Expanding the ESLint configuration
+## Screenshots
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![](https://private-user-images.githubusercontent.com/50646827/293624906-2a17487b-d95d-482f-8207-bba2cd9910dc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQxNjg2MzYsIm5iZiI6MTcwNDE2ODMzNiwicGF0aCI6Ii81MDY0NjgyNy8yOTM2MjQ5MDYtMmExNzQ4N2ItZDk1ZC00ODJmLTgyMDctYmJhMmNkOTkxMGRjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAyVDA0MDUzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQ1ZmFlMGRjMDE2N2UxNzRhNzk0NTQwZTk3NWJhOTczNzJjNzkyNGY0M2RkNjY1MDk0OTdjNDY3YzQxOTBlMmEmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.ZfcnWSrzvIJBMRWL_2xn0OIwZRUmRPZ_rGNYrCtfNX0)
+![](https://private-user-images.githubusercontent.com/50646827/293624908-32c9669d-3843-425d-a582-2bea7084f226.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQxNjg2MzYsIm5iZiI6MTcwNDE2ODMzNiwicGF0aCI6Ii81MDY0NjgyNy8yOTM2MjQ5MDgtMzJjOTY2OWQtMzg0My00MjVkLWE1ODItMmJlYTcwODRmMjI2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAyVDA0MDUzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTBiNzRlYzUwOTlkZTBmZTk2Y2QxOTk4MDI2MGIxZDcyNmQ5MmE1ZTQ5MDE4MTIzYTFkYTUyYWViZTMzMTJmZmUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.6BUcx3JnAtmZM6sATEIrQQtwwsD0OceiO_aY2cUIbAM)
+![](https://private-user-images.githubusercontent.com/50646827/293625003-33389b54-ee6b-40b7-82e6-caad1e501d3c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDQxNjg2MzYsIm5iZiI6MTcwNDE2ODMzNiwicGF0aCI6Ii81MDY0NjgyNy8yOTM2MjUwMDMtMzMzODliNTQtZWU2Yi00MGI3LTgyZTYtY2FhZDFlNTAxZDNjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMDIlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTAyVDA0MDUzNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWRiNDU5YTlhNjRjMjIxYTI5MzYzZDg4ZWY0ZDE2MTgzMWU3MTE0NWZlNDA1N2I1NTY1OGU0MzJhZmZjNTVkMjQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.WQJcudAsNATTZnvOdAtupnH8fkknCTKQfiX2cR59V0E)
