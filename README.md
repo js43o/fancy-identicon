@@ -1,6 +1,6 @@
 # ⚡Fancy Identicon
 
-> For your **cooler** GitHub profile image<br />더 멋진 랜덤 GitHub 프로필 이미지 생성기
+> Fancy Random GitHub Profile Image Generator<br />더 멋진 랜덤 GitHub 프로필 이미지 생성기
 
 ## Demo
 
